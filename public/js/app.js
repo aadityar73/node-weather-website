@@ -1,7 +1,5 @@
 'use strict';
 
-console.log('Client-side JavaScript is loaded!');
-
 const search = document.querySelector('#search-input');
 const searchBtn = document.querySelector('#searchBtn');
 const messageOne = document.querySelector('#message-1');
