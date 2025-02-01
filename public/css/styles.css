@@ -1,0 +1,70 @@
+/* * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+} */
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  color: #333;
+  font-family: Arial;
+  max-width: 65rem;
+  margin: 0 auto;
+  padding: 0 1.6rem;
+
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex-grow: 1;
+}
+
+footer {
+  color: #888;
+  border-top: 1px solid #eee;
+  margin: 1.6rem;
+  padding: 1.6rem 0;
+}
+
+header {
+  margin-top: 1.6rem;
+  margin-bottom: 4.8rem;
+}
+
+h1 {
+  font-size: 6.4rem;
+  margin-bottom: 1.6rem;
+}
+
+nav a {
+  font-size: 1.8rem;
+  color: #888;
+  margin-right: 1.6rem;
+  text-decoration: none;
+}
+
+.portrait {
+  width: 25rem;
+}
+
+p {
+  font-size: 1.6rem;
+}
+
+.input {
+  border: 1px solid #ccc;
+  padding: 8px;
+}
+
+.btn {
+  cursor: pointer;
+  border: 1px solid #888;
+  background-color: #888;
+  color: #fff;
+  padding: 8px;
+}
