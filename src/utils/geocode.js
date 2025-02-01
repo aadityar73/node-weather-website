@@ -8,9 +8,9 @@ const customEncode = str =>
   );
 
 const geocode = (address, callback) => {
-  const url = `https://api.positionstack.com/v1/forward?access_key=740faa11608ba3b05591cbef0cb7f8ab&query=${customEncode(
-    address
-  )}&limit=1`;
+  const url = `https://api.positionstack.com/v1/forward?access_key=${
+    process.env.GEOCODE_API
+  }&query=${customEncode(address)}&limit=1`;
 
   request({ url, json: true }, (error, { body } = {}) => {
     if (error) {
