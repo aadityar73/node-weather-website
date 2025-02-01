@@ -1,5 +1,8 @@
 'use strict';
+
 const request = require('postman-request');
+
+require('dotenv').config();
 
 const customEncode = str =>
   str.replace(
@@ -9,7 +12,7 @@ const customEncode = str =>
 
 const geocode = (address, callback) => {
   const url = `https://api.positionstack.com/v1/forward?access_key=${
-    process.env.GEOCODE_API
+    process.env.GEOCODE_API_KEY
   }&query=${customEncode(address)}&limit=1`;
 
   request({ url, json: true }, (error, { body } = {}) => {
